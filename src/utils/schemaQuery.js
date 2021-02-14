@@ -1,8 +1,7 @@
-/* eslint-disable no-console */
 const fetch = require('node-fetch');
 const fs = require('fs');
 
-const repoId = 'prismic-pagination-demo';
+const repoId = 'iwannatest';
 
 fetch(`https://${repoId}.cdn.prismic.io/api`)
   .then((r) => r.json())

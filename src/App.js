@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './assets/style/Common.scss';
+import styles from 'styled-components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Container = styles.div`
+  align-items: center;
+  background: #ff512f;
+  background: -webkit-linear-gradient(to right, #ff512f, #f09819);
+  background: linear-gradient(to right, #ff512f, #f09819);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+`;
+
+const App = () => (
+  <Container><p className="slogon">hello world</p></Container>
+);
 
 export default App;

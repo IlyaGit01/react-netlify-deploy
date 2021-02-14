@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+$blue: #007bff;
+$indigo: #674eec;
+$purple: #8445f7;
+$pink: #ff4169;
+$red: #c4183c;
+$orange: #fb7906;
+$yellow: #ffb400;
+$green: #17c671;
+$teal: #1adba2;
+$cyan: #00b8d8;
+$white: #fff;
+$gray: #868e96;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #5a6169;
+$success: #17c671;
+$info: #00b8d8;
+$warning: #ffb400;
+$danger: #c4183c;
+$light: #fbfbfb;
+$dark: #212529;
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$box-shadow: 0 2px 0 rgba(90,97,105,.11),
+  0 4px 8px rgba(90,97,105,.12),
+  0 10px 10px rgba(90,97,105,.06),
+  0 7px 70px rgba(90,97,105,.1);
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -6,9 +44,24 @@ html, body {
   background-color: #f5f6f8;
 }
 
+p, h1, h2, h3, h4, h5{
+  margin: 0;
+  font-family: $font-family;
+}
+
 .App, #root{
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
+}
+
+.border-bottom-common{
+  border-bottom:  1px solid #e1e5eb;
+}
+
+.slogon{
+  font-family: 'Comfortaa';
+  font-size: 50px;
+  color: white;
 }

@@ -1,0 +1,14 @@
+query getAllTesto {
+  prismicTesto {
+    data {
+      page_title
+      image {
+        dimensions {
+          height
+          width
+        }
+        url
+      }
+    }
+  }
+}
